@@ -1,0 +1,16 @@
+<!-- insert aframe script -->
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<!-- insert ar.js script -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs>
+<!-- below is the content. just a cube for now -->
+ <a-entity
+            position="0 -1 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="https://raw.githubusercontent.com/AmadeoDelgado/3d/master/zapato6.gltf"
+            ></a-entity>
+<!-- define a camera that will move according to the position of the marker -->
+<a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+</body>
