@@ -3,35 +3,15 @@
     "title": "Digitalización costa hotelera Cancun",
     "date": "March 2025",
     "description": "Detailed description of Project One tasks and outcomes.",
-    "video": "videos/Cancun.mp4",
+    "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/Cancun.mp4",
     "thumbnail": "thumbnail/cancun.jpg"
   },
   {
     "title": "Mirai Events Virtual Reality",
     "date": "April 2025",
     "description": "Detailed description of Project Two tasks and outcomes.",
-    "video": "videos/mevr.mp4",
-    "thumbnail": "thumbnail/mevr.jpg"
-  },
-    {
-    "title": "Mirai Events Virtual Reality",
-    "date": "April 2025",
-    "description": "Detailed description of Project Two tasks and outcomes.",
-    "video": "videos/mevr.mp4",
-    "thumbnail": "thumbnail/mevr.jpg"
-  },
-    {
-    "title": "Mirai Events Virtual Reality",
-    "date": "April 2025",
-    "description": "Detailed description of Project Two tasks and outcomes.",
-    "video": "videos/mevr.mp4",
-    "thumbnail": "thumbnail/mevr.jpg"
-  },
-    {
-    "title": "Mirai Events Virtual Reality",
-    "date": "April 2025",
-    "description": "Detailed description of Project Two tasks and outcomes.",
-    "video": "videos/mevr.mp4",
+    "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/mevr.mp4",
     "thumbnail": "thumbnail/mevr.jpg"
   }
+  
 ]
