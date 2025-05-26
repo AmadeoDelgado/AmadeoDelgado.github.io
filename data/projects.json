@@ -1,17 +1,33 @@
 [
-  {
-    "title": "Digitalización costa hotelera Cancun",
-    "date": "March 2025",
-    "description": "Detailed description of Project One tasks and outcomes.",
+     {
+    "title": "Proyecto: Modelado y Visualización 3D de la Zona Hotelera de Cancún",
+    "date": "Febrero – Septiembre 2024 (8 meses)",
+    "description": "<strong>Retos:</strong><ul><li>Volar y capturar más de 8.1 km² de la zona hotelera con GSD de 1.5 cm/píxel.</li><li>Optimizar grandes volúmenes de datos fotogramétricos para flujo de trabajo en tiempo real.</li><li>Implementar tráfico vehicular, aves NPC y peatones para realismo.</li></br></ul><strong>Trabajos personales:</strong><ul><li>Coordinación y planificación de misiones de vuelo.</li><li>Desarrollo de scripts de optimización para pasar modelos de fotogrametría → Blender → Unreal Engine 5.</li><li>Optimización para la visualización completa de todas las áreas usando AWS Pixel Streaming.</li><li>Implementación de sistema de control táctil y de PC similar a Google Earth.</li></ul>",
+    "thumbnail": "thumbnail/cancun.jpg",
+    "extra_img": "thumbnail/pixelstreaming.jpg",
     "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/Cancun.mp4",
-    "thumbnail": "thumbnail/cancun.jpg"
-  },
-  {
-    "title": "Mirai Events Virtual Reality",
-    "date": "April 2025",
-    "description": "Detailed description of Project Two tasks and outcomes.",
-    "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/mevr.mp4",
-    "thumbnail": "thumbnail/mevr.jpg"
+    "description2": "<strong>Objetivos alcanzados:</strong><ul><li>Entrega de un gemelo digital navegable en tiempo real.</li><li>Cumplimiento de plazos dentro de los 8 meses previstos.</li><li>Elevada interacción usuario gracias a NPC y sistemas dinámicos y controles táctiles.</li></ul>"
   }
+,
+   {
+    "title": "Mirai Events Virtual Reality",
+    "date": "Noviembre 2024 – Mayo 2025 (8 meses)",
+    "description": "<strong>Retos:</strong><ul><li>Desarrollar un editor de configuraciones de eventos con Gaussian Splatting en tiempo real.</li><li>Integrar modelos 3D junto a 3D Gaussian Splatting.</li><li>Implementar exportación de configuraciones y visor de tours 360° en navegador usando Three.js.</li></ul><br><strong>Trabajos personales:</strong><ul><li>Programación completa del editor, desde la lógica, integración de Gaussian Splatting, sistema de guardado y subida.</li><li>Diseño de experiencia de usuario (UX) enfocada en rapidez y facilidad de uso.</li><li>Integración del visor de tours 360° embebido en web.</li>",
+      "thumbnail": "thumbnail/mevr.jpg",
+     "extra_img":"thumbnail/shadows.png",
+     "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/mevr.mp4",
+     "description2":"</ul><strong>Objetivos alcanzados:</strong><ul><li>Lanzamiento de una herramienta interactiva optimizada para personalizar y visualizar eventos y compartirlos mediante un enlace web.</li> <li>Integración fluida de modelos 3D y Gaussian Splatting para una experiencia visual enriquecida.</li><li>Exportación de configuraciones y tours 360° accesibles en cualquier navegador moderno.</li></ul>"
+
+  },
+   {
+    "title": "I+D Digitalización y Analítica de Edificios con IA",
+    "date": "Enero 2024 - Junio 2024",
+    "description": "<strong>Visión del proyecto:</strong><p>Redefinir la interacción con edificios existentes, brindando a arquitectos e ingenieros herramientas basadas en IA para acelerar el diseño y la toma de decisiones.</p><strong>Retos:</strong><ul><li>Conseguir precisión milimétrica en la digitalización BIM automática mediante escaneado láser y fotogrametría.</li><li>Desarrollar modelos de IA capaces de segmentar y reconocer elementos arquitectónicos.</li><li>Implementar analítica avanzada para extraer información energética y de sostenibilidad.</li></ul><strong>Trabajos personales (IA y Data Science):</strong><ul><li>Entrenamiento de algoritmos de Machine Learning para segmentación semántica de nubes de puntos.</li><li>Creación de librerías paramétricas BIM automáticas conectadas a la nube de puntos segmentada.</li><li>Desarrollo de pipelines de analítica avanzada para evaluar estándares energéticos y de bienestar.</li><li>Formulación de modelos predictivos para el mantenimiento y control de edificios.</li>",
+    "thumbnail": "thumbnail/redes.jpg",
+    "extra_img": "thumbnail/redes-extra.jpg",
+    "video": "https://raw.githubusercontent.com/AmadeoDelgado/AmadeoDelgado.github.io/main/videos/redes.mp4",
+    "description2":"</ul><strong>Objetivos alcanzados:</strong><ul><li>Automatización completa del flujo BIM con reducción significativa de tiempos y costes.</li><li>Generación de informes de eficiencia energética basados en datos reales y normativas.</li><li>Modelo predictivo operacional listo para integración en gemelos digitales.</li></ul>"
+  }
+
   
 ]

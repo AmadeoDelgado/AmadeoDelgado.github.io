@@ -4,7 +4,7 @@
   --fg: #111;
   --accent: #0066ff;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 10; padding: 0; }
 body { font-family: var(--font-sans); background: var(--bg); color: var(--fg); overflow-x: hidden; }
 .header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 10; }
 .logo { font-size: 2.5rem; font-weight: 600;}
@@ -27,6 +27,7 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--fg); o
   margin: 1.5rem auto;
   animation: fadeInUp 0.8s ease;
 }
+.extra-img { display: block; width: 80%; max-width: 800px; margin: 2rem auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
 .video-container video {
   width: 100%;
   height: auto;
