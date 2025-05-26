@@ -1,0 +1,44 @@
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --bg: #f9f9f9;
+  --fg: #111;
+  --accent: #0066ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--fg); overflow-x: hidden; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 10; }
+.logo { font-size: 2.5rem; font-weight: 600;}
+.nav { display: flex; gap: 1.5rem; }
+.nav a { text-decoration: none; color: var(--fg); font-weight: 400; position: relative; }
+.nav a::after { content: ''; position: absolute; width: 0; height: 2px; background: var(--accent); left: 0; bottom: -4px; transition: width 0.3s ease; }
+.nav a:hover::after { width: 100%; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger div { width: 25px; height: 3px; background: var(--fg); transition: transform 0.3s ease; }
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem; padding: 2rem; }
+.project-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: transform 0.6s ease, opacity 0.6s ease; text-decoration: none; color: inherit; }
+.project-card.visible { transform: translateY(0); opacity: 1; }
+.project-card img { width: 100%; height: 200px; object-fit: cover; loading: lazy; }
+.project-card h2 { padding: 1rem; font-size: 1.25rem; font-weight: 400; }
+.back-link { display: inline-block; margin: 1rem 2rem; text-decoration: none; color: var(--accent); }
+.project-detail { max-width: 800px; margin: 2rem auto; padding: 0 1rem; animation: fadeIn 0.8s ease; }
+.video-container {
+  width: 75%;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  animation: fadeInUp 0.8s ease;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.date { color: #666; margin-bottom: 1rem; }
+@media (max-width: 768px) {
+  .nav { position: absolute; top: 100%; right: 0; background: #fff; flex-direction: column; width: 200px; transform: translateX(100%); transition: transform 0.3s ease; }
+  .nav.open { transform: translateX(0); }
+  .hamburger { display: flex; }
+  .video-container { width: 90%; }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }

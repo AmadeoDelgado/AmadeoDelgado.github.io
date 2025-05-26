@@ -1,0 +1,38 @@
+<!-- project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Amadeo Delgado Casado</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="index.html" class="back-link">← Back</a>
+  <article class="project-detail">
+    <h1 id="proj-title"></h1>
+    <p class="date" id="proj-date"></p>
+    <p id="proj-desc"></p>
+    <div class="video-container">
+      <video id="proj-video" controls muted playsinline></video>
+    </div>
+  </article>
+
+  <script>
+    // Read index from query param
+    const params = new URLSearchParams(location.search);
+    const idx = params.get('idx') || 0;
+    fetch('data/projects.json')
+      .then(res => res.json())
+      .then(data => {
+        const p = data[idx];
+        document.getElementById('proj-title').textContent = p.title;
+        document.getElementById('proj-date').textContent = p.date;
+        document.getElementById('proj-desc').textContent = p.description;
+        const vid = document.getElementById('proj-video');
+        vid.src = p.video;
+      });
+  </script>
+</body>
+</html>
